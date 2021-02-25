@@ -3,8 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Proyecto de Seminario-Taller: Introducción a la Escritura en :math:`\LaTeX{}`
-==============================================================================
+Página oficial del Seminario-Taller: Introducción a la Escritura en :math:`\LaTeX{}`
+======================================================================================
+Página en desarrollo
+======================================================================================
 
 .. toctree::
    :maxdepth: 2
