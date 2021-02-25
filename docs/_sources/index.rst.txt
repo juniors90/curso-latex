@@ -3,14 +3,22 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Curso de LaTeX 2021
-===================
+Proyecto de Seminario-Taller: Introducción a la Escritura en :math:`\LaTeX{}`
+==============================================================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
-
-
+   :caption: Contenidos del Curso:
+   :numbered:
+   
+   unidad_1
+   unidad_2
+   unidad_3
+   unidad_4
+   unidad_5
+   unidad_6
+   unidad_7
+   unidad_8
 
 Indice
 ======
