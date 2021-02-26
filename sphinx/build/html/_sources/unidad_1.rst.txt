@@ -1,50 +1,63 @@
 Introducción a :math:`\LaTeX{}`
-===============================
+================================
 
-Introducción a la Documentación :math:`\LaTeX{}`.
+Documentación :math:`\LaTeX{}`.
 --------------------------------------------------
 
 Estimados estudiantes, la primera pregunta que nos surge cuando queremos componer documentos científicos de alta calidad es ¿qué herramientas debería utilizar?. Entonces, investigando llegamos a que la mejor opción es :math:`\LaTeX{}`, pero... ¿Qué es :math:`\LaTeX{}`?.
 
-:math:`\LaTeX{}` es software libre bajo licencia LPPL, especializado en la composición de textos cientificos, que consiste en un gran conjunto de macros de :math:`\TeX{}`. Fue escrito por Leslie Lamport, en 1984 , con la intención de facilitar el uso del **lenguaje de composición tipográfica**, :math:`\TeX{}` creado por Donald Knuth.
-
-
+:math:`\LaTeX{}` es software libre bajo licencia LPPL, especializado en la composición de textos cientificos, que consiste en un gran conjunto de macros de :math:`\TeX{}`. Fue escrito por `Leslie Lamport <https://es.wikipedia.org/wiki/Leslie_Lamport>`_, en *1984* , con la intención de facilitar el uso del **lenguaje de composición tipográfica**, :math:`\TeX{}` creado por `Donald Knuth <https://es.wikipedia.org/wiki/Donald_Knuth>`_.
 
 Introducción al Lenguaje :math:`\TeX{}`.
 --------------------------------------------------
 
-Este lenguaje (:math:`\TeX{}`) crea diversos archivos de respaldo, entre ellos un archivo de extensión ".dvi" con las instrucciones de cómo se debe imprimir. En la actualidad se utiliza :math:`\text{pdf}\LaTeX{}` para pasar de instrucciones LATEX a un ".pdf".
+Este lenguaje (:math:`\TeX{}`) crea diversos archivos de respaldo, entre ellos un archivo de extensión ".dvi" con las instrucciones de cómo se debe imprimir. En la actualidad se utiliza :math:`\text{pdf}\LaTeX{}` para pasar de instrucciones :math:`\LaTeX{}` a un ".pdf".
 
 Notamos que :math:`\LaTeX{}` presupone un cambio de profundo en la manera de pensar para el que está habituado a escribir textos utilizando procesadores de textos comerciales, ya que emplea una filosofía de trabajo diferente a la de los procesadores de texto habituales (conocidos como **WYSIWYG**, es decir, "lo que ves es lo que obtienes") y se basa en instrucciones.
 
-Tradicionalmente, este aspecto se ha considerado una desventaja (probablemente la única). En este **seminario-taller**, apuntamos a describir los fundamentos básicos para la elaboración de textos en :math:`\LaTeX{}`, dando a conocer el entorno de desarrollo, los comandos principales para la codificación de un artículo, la implicancia de la utilización del sistema (integrar el núcleo con un editor de textos preferido) y la calidad tipográfica resultante.
+Tradicionalmente, este aspecto se ha considerado una desventaja (probablemente la única). En este **seminario-taller**, apuntamos a describir los fundamentos básicos para la elaboración de textos en :math:`\LaTeX{}`, dando a conocer el entorno de desarrollo, los comandos principales para la codificación de un artículo, la implicancia de la utilización del sistema (integrar el núcleo con nuestro editor de textos preferido) y la calidad tipográfica resultante.
 
 CTAN.
 --------------------------------------------------
 
+`CTAN <https://www.ctan.org/>`_ es la abreviación de **"Comprehensive TEX Archive Network (CTAN)"**, que es el lugar central para encontar documentación de todos materiales referentes a :math:`\TeX{}`. CTAN posee actualmente *5990* paquetes disponibles para los usuarios y cerca de *2757* contribuyentes que mantiene activa la documentación. La mayoría de los paquetes son libres y pueden ser descargados y utilizados al instante.
+
 Instalación.
 --------------------------------------------------
 
-Documento ”.tex”.
+Documento ".tex".
 --------------------------------------------------
 
-Estructura general begin/end.
+Habitualmente, usamos sofwares para procesar textos, éstos que tienen integradas la escritura la composición, la visualizción y la impresión del documento final. En este sistema de construcción de textos académicos de alta calidad, estas tareas son realizadas por diversos componentes, que detallaremos a continuación:
+
+1. **Escritura**: Un documento en :math:`\LaTeX{}` es creado con una extensión ".tex" y se recomienda que sea guardado luego ser compilado. Es un tipo que documento que para su escritura utiliza los caracteres ASCII (`American Standard Code for Information Interchange <https://es.wikipedia.org/wiki/ASCII>`_).
+    
+   .. include:: ascii.tex
+
+   Esto quiere decir que cualquier editor que contenga estos standares de codificación podran servir para editar nuestro archivo, que luego guardaremos con extensión ".tex".
+
+2. **Compilación**: una vez que se compila el docmento se obtiene una fichero con la extensión ".dvi" pero con el mismo nombre. Este es importante pues es el cual nos permite visualizar nuetro documento. Luego del proceso de compilación, el procesador crea varios archivos con extnsiones ".aux", ".dvi", ".log", ".pdf", ".ps", "etc".
+    
+    .. code-block:: none
+
+        mi-proyecto/
+        |_ img/
+        |_ mi_documento.aux
+        |_ mi_documento.log
+        ...
+        |_ mi_documento.pdf
+        |_ mi_documento.tex
+        |_ mi_documento.toc
+
+Estructura General de un documento.
 --------------------------------------------------
+
 
 Preámbulo.
---------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Uso de Paquetes (usepackage).
---------------------------------------------------
+Uso de Paquetes.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 El cuerpo del documento.
---------------------------------------------------
-
-Compilación.
---------------------------------------------------
-
-Archivos ”.aux, .dvi, .log, .pdf, .ps”.
---------------------------------------------------
-
-Uso del Lorem ipsum
---------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

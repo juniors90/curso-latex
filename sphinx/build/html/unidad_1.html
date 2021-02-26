@@ -89,18 +89,17 @@
               <p class="caption"><span class="caption-text">Contenidos del Curso:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">1. Introducción a <span class="math notranslate nohighlight">\(\LaTeX{}\)</span></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introduccion-a-la-documentacion-latex">1.1. Introducción a la Documentación <span class="math notranslate nohighlight">\(\LaTeX{}\)</span>.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentacion-latex">1.1. Documentación <span class="math notranslate nohighlight">\(\LaTeX{}\)</span>.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#introduccion-al-lenguaje-tex">1.2. Introducción al Lenguaje <span class="math notranslate nohighlight">\(\TeX{}\)</span>.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ctan">1.3. CTAN.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#instalacion">1.4. Instalación.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#documento-tex">1.5. Documento ”.tex”.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#estructura-general-begin-end">1.6. Estructura general begin/end.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#preambulo">1.7. Preámbulo.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#uso-de-paquetes-usepackage">1.8. Uso de Paquetes (usepackage).</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#el-cuerpo-del-documento">1.9. El cuerpo del documento.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#compilacion">1.10. Compilación.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#archivos-aux-dvi-log-pdf-ps">1.11. Archivos ”.aux, .dvi, .log, .pdf, .ps”.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#uso-del-lorem-ipsum">1.12. Uso del Lorem ipsum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documento-tex">1.5. Documento «.tex».</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#estructura-general-de-un-documento">1.6. Estructura General de un documento.</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preambulo">1.6.1. Preámbulo.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uso-de-paquetes">1.6.2. Uso de Paquetes.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#el-cuerpo-del-documento">1.6.3. El cuerpo del documento.</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="unidad_2.html">2. Formatos del texto</a></li>
@@ -179,46 +178,61 @@
             
   <div class="section" id="introduccion-a-latex">
 <h1><span class="section-number">1. </span>Introducción a <span class="math notranslate nohighlight">\(\LaTeX{}\)</span><a class="headerlink" href="#introduccion-a-latex" title="Enlazar permanentemente con este título">¶</a></h1>
-<div class="section" id="introduccion-a-la-documentacion-latex">
-<h2><span class="section-number">1.1. </span>Introducción a la Documentación <span class="math notranslate nohighlight">\(\LaTeX{}\)</span>.<a class="headerlink" href="#introduccion-a-la-documentacion-latex" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="documentacion-latex">
+<h2><span class="section-number">1.1. </span>Documentación <span class="math notranslate nohighlight">\(\LaTeX{}\)</span>.<a class="headerlink" href="#documentacion-latex" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Estimados estudiantes, la primera pregunta que nos surge cuando queremos componer documentos científicos de alta calidad es ¿qué herramientas debería utilizar?. Entonces, investigando llegamos a que la mejor opción es <span class="math notranslate nohighlight">\(\LaTeX{}\)</span>, pero… ¿Qué es <span class="math notranslate nohighlight">\(\LaTeX{}\)</span>?.</p>
-<p><span class="math notranslate nohighlight">\(\LaTeX{}\)</span> es software libre bajo licencia LPPL, especializado en la composición de textos cientificos, que consiste en un gran conjunto de macros de <span class="math notranslate nohighlight">\(\TeX{}\)</span>. Fue escrito por Leslie Lamport, en 1984 , con la intención de facilitar el uso del <strong>lenguaje de composición tipográfica</strong>, <span class="math notranslate nohighlight">\(\TeX{}\)</span> creado por Donald Knuth.</p>
+<p><span class="math notranslate nohighlight">\(\LaTeX{}\)</span> es software libre bajo licencia LPPL, especializado en la composición de textos cientificos, que consiste en un gran conjunto de macros de <span class="math notranslate nohighlight">\(\TeX{}\)</span>. Fue escrito por <a class="reference external" href="https://es.wikipedia.org/wiki/Leslie_Lamport">Leslie Lamport</a>, en <em>1984</em> , con la intención de facilitar el uso del <strong>lenguaje de composición tipográfica</strong>, <span class="math notranslate nohighlight">\(\TeX{}\)</span> creado por <a class="reference external" href="https://es.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a>.</p>
 </div>
 <div class="section" id="introduccion-al-lenguaje-tex">
 <h2><span class="section-number">1.2. </span>Introducción al Lenguaje <span class="math notranslate nohighlight">\(\TeX{}\)</span>.<a class="headerlink" href="#introduccion-al-lenguaje-tex" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Este lenguaje (<span class="math notranslate nohighlight">\(\TeX{}\)</span>) crea diversos archivos de respaldo, entre ellos un archivo de extensión «.dvi» con las instrucciones de cómo se debe imprimir. En la actualidad se utiliza <span class="math notranslate nohighlight">\(\text{pdf}\LaTeX{}\)</span> para pasar de instrucciones LATEX a un «.pdf».</p>
+<p>Este lenguaje (<span class="math notranslate nohighlight">\(\TeX{}\)</span>) crea diversos archivos de respaldo, entre ellos un archivo de extensión «.dvi» con las instrucciones de cómo se debe imprimir. En la actualidad se utiliza <span class="math notranslate nohighlight">\(\text{pdf}\LaTeX{}\)</span> para pasar de instrucciones <span class="math notranslate nohighlight">\(\LaTeX{}\)</span> a un «.pdf».</p>
 <p>Notamos que <span class="math notranslate nohighlight">\(\LaTeX{}\)</span> presupone un cambio de profundo en la manera de pensar para el que está habituado a escribir textos utilizando procesadores de textos comerciales, ya que emplea una filosofía de trabajo diferente a la de los procesadores de texto habituales (conocidos como <strong>WYSIWYG</strong>, es decir, «lo que ves es lo que obtienes») y se basa en instrucciones.</p>
-<p>Tradicionalmente, este aspecto se ha considerado una desventaja (probablemente la única). En este <strong>seminario-taller</strong>, apuntamos a describir los fundamentos básicos para la elaboración de textos en <span class="math notranslate nohighlight">\(\LaTeX{}\)</span>, dando a conocer el entorno de desarrollo, los comandos principales para la codificación de un artículo, la implicancia de la utilización del sistema (integrar el núcleo con un editor de textos preferido) y la calidad tipográfica resultante.</p>
+<p>Tradicionalmente, este aspecto se ha considerado una desventaja (probablemente la única). En este <strong>seminario-taller</strong>, apuntamos a describir los fundamentos básicos para la elaboración de textos en <span class="math notranslate nohighlight">\(\LaTeX{}\)</span>, dando a conocer el entorno de desarrollo, los comandos principales para la codificación de un artículo, la implicancia de la utilización del sistema (integrar el núcleo con nuestro editor de textos preferido) y la calidad tipográfica resultante.</p>
 </div>
 <div class="section" id="ctan">
 <h2><span class="section-number">1.3. </span>CTAN.<a class="headerlink" href="#ctan" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><a class="reference external" href="https://www.ctan.org/">CTAN</a> es la abreviación de <strong>«Comprehensive TEX Archive Network (CTAN)»</strong>, que es el lugar central para encontar documentación de todos materiales referentes a <span class="math notranslate nohighlight">\(\TeX{}\)</span>. CTAN posee actualmente <em>5990</em> paquetes disponibles para los usuarios y cerca de <em>2757</em> contribuyentes que mantiene activa la documentación. La mayoría de los paquetes son libres y pueden ser descargados y utilizados al instante.</p>
 </div>
 <div class="section" id="instalacion">
 <h2><span class="section-number">1.4. </span>Instalación.<a class="headerlink" href="#instalacion" title="Enlazar permanentemente con este título">¶</a></h2>
 </div>
 <div class="section" id="documento-tex">
-<h2><span class="section-number">1.5. </span>Documento ”.tex”.<a class="headerlink" href="#documento-tex" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2><span class="section-number">1.5. </span>Documento «.tex».<a class="headerlink" href="#documento-tex" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Habitualmente, usamos sofwares para procesar textos, éstos que tienen integradas la escritura la composición, la visualizción y la impresión del documento final. En este sistema de construcción de textos académicos de alta calidad, estas tareas son realizadas por diversos componentes, que detallaremos a continuación:</p>
+<ol class="arabic">
+<li><p><strong>Escritura</strong>: Un documento en <span class="math notranslate nohighlight">\(\LaTeX{}\)</span> es creado con una extensión «.tex» y se recomienda que sea guardado luego ser compilado. Es un tipo que documento que para su escritura utiliza los caracteres ASCII (<a class="reference external" href="https://es.wikipedia.org/wiki/ASCII">American Standard Code for Information Interchange</a>).</p>
+<p>! » # &amp; “ ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ? $ %</p>
+<p>&#64; A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _</p>
+<p>` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~</p>
+<p>Esto quiere decir que cualquier editor que contenga estos standares de codificación podran servir para editar nuestro archivo, que luego guardaremos con extensión «.tex».</p>
+</li>
+<li><p><strong>Compilación</strong>: una vez que se compila el docmento se obtiene una fichero con la extensión «.dvi» pero con el mismo nombre. Este es importante pues es el cual nos permite visualizar nuetro documento. Luego del proceso de compilación, el procesador crea varios archivos con extnsiones «.aux», «.dvi», «.log», «.pdf», «.ps», «etc».</p>
+<blockquote>
+<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>mi-proyecto/
+|_ img/
+|_ mi_documento.aux
+|_ mi_documento.log
+...
+|_ mi_documento.pdf
+|_ mi_documento.tex
+|_ mi_documento.toc
+</pre></div>
 </div>
-<div class="section" id="estructura-general-begin-end">
-<h2><span class="section-number">1.6. </span>Estructura general begin/end.<a class="headerlink" href="#estructura-general-begin-end" title="Enlazar permanentemente con este título">¶</a></h2>
+</div></blockquote>
+</li>
+</ol>
 </div>
+<div class="section" id="estructura-general-de-un-documento">
+<h2><span class="section-number">1.6. </span>Estructura General de un documento.<a class="headerlink" href="#estructura-general-de-un-documento" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="preambulo">
-<h2><span class="section-number">1.7. </span>Preámbulo.<a class="headerlink" href="#preambulo" title="Enlazar permanentemente con este título">¶</a></h2>
+<h3><span class="section-number">1.6.1. </span>Preámbulo.<a class="headerlink" href="#preambulo" title="Enlazar permanentemente con este título">¶</a></h3>
 </div>
-<div class="section" id="uso-de-paquetes-usepackage">
-<h2><span class="section-number">1.8. </span>Uso de Paquetes (usepackage).<a class="headerlink" href="#uso-de-paquetes-usepackage" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="uso-de-paquetes">
+<h3><span class="section-number">1.6.2. </span>Uso de Paquetes.<a class="headerlink" href="#uso-de-paquetes" title="Enlazar permanentemente con este título">¶</a></h3>
 </div>
 <div class="section" id="el-cuerpo-del-documento">
-<h2><span class="section-number">1.9. </span>El cuerpo del documento.<a class="headerlink" href="#el-cuerpo-del-documento" title="Enlazar permanentemente con este título">¶</a></h2>
+<h3><span class="section-number">1.6.3. </span>El cuerpo del documento.<a class="headerlink" href="#el-cuerpo-del-documento" title="Enlazar permanentemente con este título">¶</a></h3>
 </div>
-<div class="section" id="compilacion">
-<h2><span class="section-number">1.10. </span>Compilación.<a class="headerlink" href="#compilacion" title="Enlazar permanentemente con este título">¶</a></h2>
-</div>
-<div class="section" id="archivos-aux-dvi-log-pdf-ps">
-<h2><span class="section-number">1.11. </span>Archivos ”.aux, .dvi, .log, .pdf, .ps”.<a class="headerlink" href="#archivos-aux-dvi-log-pdf-ps" title="Enlazar permanentemente con este título">¶</a></h2>
-</div>
-<div class="section" id="uso-del-lorem-ipsum">
-<h2><span class="section-number">1.12. </span>Uso del Lorem ipsum<a class="headerlink" href="#uso-del-lorem-ipsum" title="Enlazar permanentemente con este título">¶</a></h2>
 </div>
 </div>
 
