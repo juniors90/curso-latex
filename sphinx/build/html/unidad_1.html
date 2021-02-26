@@ -95,9 +95,14 @@
 <li class="toctree-l2"><a class="reference internal" href="#instalacion">1.4. Instalación.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#documento-tex">1.5. Documento «.tex».</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#estructura-general-de-un-documento">1.6. Estructura General de un documento.</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#preambulo">1.6.1. Preámbulo.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#uso-de-paquetes">1.6.2. Uso de Paquetes.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#el-cuerpo-del-documento">1.6.3. El cuerpo del documento.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clase-de-documento-documentclass">1.6.1. Clase de documento/documentclass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#preambulo">1.6.2. Preámbulo.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uso-de-paquetes">1.6.3. Uso de Paquetes.</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#instalar-un-paquete">1.6.3.1. Instalar un paquete</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#proposito-de-los-paquetes">1.6.3.2. Propósito de los paquetes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#el-cuerpo-del-documento">1.6.4. El cuerpo del documento.</a></li>
 </ul>
 </li>
 </ul>
@@ -224,14 +229,71 @@
 </div>
 <div class="section" id="estructura-general-de-un-documento">
 <h2><span class="section-number">1.6. </span>Estructura General de un documento.<a class="headerlink" href="#estructura-general-de-un-documento" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="clase-de-documento-documentclass">
+<h3><span class="section-number">1.6.1. </span>Clase de documento/documentclass<a class="headerlink" href="#clase-de-documento-documentclass" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La clase de documento es el encargado de indicar a <span class="math notranslate nohighlight">\(\LaTeX{}\)</span> el tipo de documento e información opcional, que <span class="math notranslate nohighlight">\(\LaTeX{}\)</span> necesitará para formatear nuestro documento correctamente.</p>
+<p>Las <a class="reference external" href="https://ctan.org/topic/class">clases de documentos</a> incluyen <a class="reference external" href="https://ctan.org/pkg/article">article</a>, <a class="reference external" href="https://ctan.org/pkg/book">book</a>, <a class="reference external" href="https://ctan.org/pkg/letter">letter</a>, <a class="reference external" href="https://ctan.org/pkg/report">report</a>, <a class="reference external" href="https://ctan.org/pkg/beamer">beamer</a>, <a class="reference external" href="https://ctan.org/pkg/leaflet">leafleft</a>, etc.</p>
+</div>
 <div class="section" id="preambulo">
-<h3><span class="section-number">1.6.1. </span>Preámbulo.<a class="headerlink" href="#preambulo" title="Enlazar permanentemente con este título">¶</a></h3>
+<h3><span class="section-number">1.6.2. </span>Preámbulo.<a class="headerlink" href="#preambulo" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>El preámbulo es la primera sección de entrada del archivo. Se declara antes del cuerpo del documento en sí. El preámbulo se usa por completo en todo documento <span class="math notranslate nohighlight">\(\LaTeX{}\)</span>, es decir, no existe un documento «elaborado» que no posea un preámbulo.</p>
+<p>El lenguaje <span class="math notranslate nohighlight">\(\LaTeX{}\)</span> consta de un «preámbulo» seguido de «texto del documento».</p>
+<div class="literal-block-wrapper docutils container" id="prembulo-tex">
+<div class="code-block-caption"><span class="caption-text">preambulo.tex</span><a class="headerlink" href="#prembulo-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[a4paper, 11pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="c">% nuestro preámbulo va aquí</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+    <span class="c">% texto del documento</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>El preámbulo incluye definiciones del titulo, autor, fecha, el uso de paquetes, definición de nuevos comandos y redefinición de comandos que <span class="math notranslate nohighlight">\(\LaTeX{}\)</span> trae por defecto. Todo esto lo veremos en un ejemplo de la siguinte sección.</p>
 </div>
 <div class="section" id="uso-de-paquetes">
-<h3><span class="section-number">1.6.2. </span>Uso de Paquetes.<a class="headerlink" href="#uso-de-paquetes" title="Enlazar permanentemente con este título">¶</a></h3>
+<h3><span class="section-number">1.6.3. </span>Uso de Paquetes.<a class="headerlink" href="#uso-de-paquetes" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><span class="math notranslate nohighlight">\(\LaTeX{}\)</span> proporciona muchas funciones por defecto, pero en algunas situaciones puede resultar útil utilizar lo que llamamos «paquetes». Estos se deben importar, simplemente agregando la directiva <code class="docutils literal notranslate"><span class="pre">\usepackage</span></code> al preámbulo  de nuestro documento, por ejemplo:</p>
+<div class="literal-block-wrapper docutils container" id="paquetes-tex">
+<div class="code-block-caption"><span class="caption-text">paquetes.tex</span><a class="headerlink" href="#paquetes-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[a4paper, 11pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[spanish]</span><span class="nb">{</span>babel<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[t1]</span><span class="nb">{</span>fontenc<span class="nb">}</span>
+<span class="c">% más paquetes, los que necesitemos XD...</span>
+<span class="k">\title</span><span class="nb">{</span>Seminario-Taller: Introducción a la Escritura en <span class="k">\LaTeX</span><span class="nb">{}}</span>
+<span class="k">\author</span><span class="nb">{</span>Ferreira, Juan David<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+    <span class="c">% texto del documento</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="instalar-un-paquete">
+<h4><span class="section-number">1.6.3.1. </span>Instalar un paquete<a class="headerlink" href="#instalar-un-paquete" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Al usar Linux o Mac, la mayoría de los paquetes ya estarán instalados de forma predeterminada y, por lo general, no es necesario instalarlos. En caso de que Ubuntu instale  texlive-full desde el administrador de paquetes, se proporcionarían todos los paquetes disponibles. El paquete MiKTeX en Windows descargará el paquete si lo incluye en su documento.</p>
+</div>
+<div class="section" id="proposito-de-los-paquetes">
+<h4><span class="section-number">1.6.3.2. </span>Propósito de los paquetes<a class="headerlink" href="#proposito-de-los-paquetes" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Existen infinidad de paquetes, todos para diferentes propósitos y en este curso introductorio a la escritura academica en <span class="math notranslate nohighlight">\(\LaTeX{}\)</span> solo explicaremos los más útiles para iniciarnos en el lenguaje. Para componer matemáticas, <span class="math notranslate nohighlight">\(\LaTeX{}\)</span> ofrece (entre otros) un entorno de ecuación. Todo dentro de este entorno se imprimirá en modo matemático, que es un entorno de composición tipográfica especial para matemáticas. todo esto lo veremos en una sección especial, dedicada al «Modo matemático».</p>
+</div>
 </div>
 <div class="section" id="el-cuerpo-del-documento">
-<h3><span class="section-number">1.6.3. </span>El cuerpo del documento.<a class="headerlink" href="#el-cuerpo-del-documento" title="Enlazar permanentemente con este título">¶</a></h3>
+<h3><span class="section-number">1.6.4. </span>El cuerpo del documento.<a class="headerlink" href="#el-cuerpo-del-documento" title="Enlazar permanentemente con este título">¶</a></h3>
 </div>
 </div>
 </div>

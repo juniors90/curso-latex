@@ -52,12 +52,67 @@ Habitualmente, usamos sofwares para procesar textos, éstos que tienen integrada
 Estructura General de un documento.
 --------------------------------------------------
 
+Clase de documento/documentclass
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+La clase de documento es el encargado de indicar a :math:`\LaTeX{}` el tipo de documento e información opcional, que :math:`\LaTeX{}` necesitará para formatear nuestro documento correctamente.
+
+Las `clases de documentos <https://ctan.org/topic/class>`_ incluyen `article <https://ctan.org/pkg/article>`_, `book <https://ctan.org/pkg/book>`_, `letter <https://ctan.org/pkg/letter>`_, `report <https://ctan.org/pkg/report>`_, `beamer <https://ctan.org/pkg/beamer>`_, `leafleft <https://ctan.org/pkg/leaflet>`_, etc.
 
 Preámbulo.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+El preámbulo es la primera sección de entrada del archivo. Se declara antes del cuerpo del documento en sí. El preámbulo se usa por completo en todo documento :math:`\LaTeX{}`, es decir, no existe un documento "elaborado" que no posea un preámbulo.
+
+El lenguaje :math:`\LaTeX{}` consta de un "preámbulo" seguido de "texto del documento".
+
+.. code-block:: latex
+    :caption: preambulo.tex
+    :name: prembulo-tex
+    :linenos:
+
+    \documentclass[a4paper, 11pt]{article}
+    % nuestro preámbulo va aquí
+    \begin{document}
+        % texto del documento
+    \end{document}
+
+
+El preámbulo incluye definiciones del titulo, autor, fecha, el uso de paquetes, definición de nuevos comandos y redefinición de comandos que :math:`\LaTeX{}` trae por defecto. Todo esto lo veremos en un ejemplo de la siguinte sección.
+
 Uso de Paquetes.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:math:`\LaTeX{}` proporciona muchas funciones por defecto, pero en algunas situaciones puede resultar útil utilizar lo que llamamos "paquetes". Estos se deben importar, simplemente agregando la directiva ``\usepackage`` al preámbulo  de nuestro documento, por ejemplo:
+
+.. code-block:: latex
+    :caption: paquetes.tex
+    :name: paquetes-tex
+    :linenos:
+
+    \documentclass[a4paper, 11pt]{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage[spanish]{babel}
+    \usepackage[t1]{fontenc}
+    % más paquetes, los que necesitemos XD...
+    \title{Seminario-Taller: Introducción a la Escritura en \LaTeX{}}
+    \author{Ferreira, Juan David}
+    \date{\today}
+    \begin{document}
+        % texto del documento
+    \end{document}
+
+Instalar un paquete
++++++++++++++++++++++++++++++++
+
+Al usar Linux o Mac, la mayoría de los paquetes ya estarán instalados de forma predeterminada y, por lo general, no es necesario instalarlos. En caso de que Ubuntu instale  texlive-full desde el administrador de paquetes, se proporcionarían todos los paquetes disponibles. El paquete MiKTeX en Windows descargará el paquete si lo incluye en su documento.
+
+Propósito de los paquetes
++++++++++++++++++++++++++++++++
+
+Existen infinidad de paquetes, todos para diferentes propósitos y en este curso introductorio a la escritura academica en :math:`\LaTeX{}` solo explicaremos los más útiles para iniciarnos en el lenguaje. Para componer matemáticas, :math:`\LaTeX{}` ofrece (entre otros) un entorno de ecuación. Todo dentro de este entorno se imprimirá en modo matemático, que es un entorno de composición tipográfica especial para matemáticas. todo esto lo veremos en una sección especial, dedicada al "Modo matemático". 
+
+.. :math:`\LaTeX{}` también se encarga de los números de ecuación por nosotros.
 
 El cuerpo del documento.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
