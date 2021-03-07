@@ -33,6 +33,7 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -169,11 +170,168 @@
             
   <div class="section" id="imagenes-y-figuras">
 <h1><span class="section-number">3. </span>Imágenes y figuras<a class="headerlink" href="#imagenes-y-figuras" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>El objetivo principal de este encuentro es la introducción de <strong>Figuras</strong> y <strong>Tablas</strong> dentro de nuestro documento <span class="math notranslate nohighlight">\(\LaTeX{}\)</span>. El paquete <code class="docutils literal notranslate"><span class="pre">graphicx</span></code>, nos permite compilar figuras en cualquier formato utilizando el comando <code class="docutils literal notranslate"><span class="pre">\includegraphics[options]{my_image}</span></code>. Para el manejo de imágenes como fotografías, capturas de pantallas, etc., podemos usar los formatos <code class="docutils literal notranslate"><span class="pre">.JPG</span></code> y <code class="docutils literal notranslate"><span class="pre">.PNG</span></code>. Uno de los formatos aceptados es el formato con extensión <code class="docutils literal notranslate"><span class="pre">.eps</span></code> (<em>Encapsuled PostScripts</em>).</p>
 <div class="section" id="introduccion-a-los-paquetes-de-imagenes-y-figuras">
 <h2><span class="section-number">3.1. </span>Introducción a los paquetes de imagenes y figuras.<a class="headerlink" href="#introduccion-a-los-paquetes-de-imagenes-y-figuras" title="Enlazar permanentemente con este título">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 24%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Opciones</p></th>
+<th class="head"><p>tipo</p></th>
+<th class="head"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>scale</p></td>
+<td><p>numérico</p></td>
+<td><p>Es un factor de escalamiento</p></td>
+</tr>
+<tr class="row-odd"><td><p>width</p></td>
+<td><p>longitud</p></td>
+<td><p>Es el ancho al que se debe escalar la figura</p></td>
+</tr>
+<tr class="row-even"><td><p>height</p></td>
+<td><p>longitud</p></td>
+<td><p>Es el alto al que se debe escalar la figura .</p></td>
+</tr>
+<tr class="row-odd"><td><p>clip</p></td>
+<td><p>true/false</p></td>
+<td><p>Excluye todo lo que esté fuera del cuadro delimitador.</p></td>
+</tr>
+<tr class="row-even"><td><p>trim</p></td>
+<td><p>dllx dlly durx dury</p></td>
+<td><p>Reduce el cuadro delimitador en la cantidad
+especificada.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Para utilizar la opción <code class="docutils literal notranslate"><span class="pre">trim</span></code>, debemos asignar cuatro valores separados por espacios <code class="docutils literal notranslate"><span class="pre">trim={&lt;izquierda&gt;</span> <span class="pre">&lt;abajo&gt;</span> <span class="pre">&lt;derecha&gt;</span> <span class="pre">&lt;arriba&gt;}</span></code>. Después de configurar estos valores, debemos activar el recorte con <code class="docutils literal notranslate"><span class="pre">clip=true</span></code> o simplemente <code class="docutils literal notranslate"><span class="pre">clip</span></code>.</p>
 </div>
 <div class="section" id="insertar-imagenes-y-figuras-en-un-documento">
 <h2><span class="section-number">3.2. </span>Insertar imágenes y Figuras en un documento.<a class="headerlink" href="#insertar-imagenes-y-figuras-en-un-documento" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El paquete <code class="docutils literal notranslate"><span class="pre">graphicx</span></code>, nos permite compilar figuras en cualquier formato utilizando el comando <code class="docutils literal notranslate"><span class="pre">\includegraphics[opciones]{imagen}</span></code></p>
+<div class="literal-block-wrapper docutils container" id="graphicx-tex">
+<div class="code-block-caption"><span class="caption-text">graphicx.tex</span><a class="headerlink" href="#graphicx-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[a4paper, 11pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[spanish]</span><span class="nb">{</span>babel<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[t1]</span><span class="nb">{</span>fontenc<span class="nb">}</span>
+<span class="c">% más paquetes, los que necesitemos XD...</span>
+<span class="k">\usepackage</span><span class="nb">{</span>graphicx<span class="nb">}</span>   <span class="c">%% --&gt; nos permite insertar figuras</span>
+<span class="k">\title</span><span class="nb">{</span>Seminario-Taller: Introducción a la Escritura en <span class="k">\LaTeX</span><span class="nb">{}}</span>
+<span class="k">\author</span><span class="nb">{</span>Ferreira, Juan David<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+    <span class="c">% figura en el documento</span>
+    <span class="k">\includegraphics</span><span class="na">[scale=0.5]</span><span class="nb">{</span>my<span class="nb">_</span>imagen.png<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>Si deseamos compilar una imagen con formato <code class="docutils literal notranslate"><span class="pre">.eps</span></code>, primero declaramos en nuestro preámbulo el paquete <code class="docutils literal notranslate"><span class="pre">epstopdf</span></code>, <code class="docutils literal notranslate"><span class="pre">\includegraphics[opciones]{imagen}</span></code></p>
+<div class="literal-block-wrapper docutils container" id="epstopdf-tex">
+<div class="code-block-caption"><span class="caption-text">epstopdf.tex</span><a class="headerlink" href="#epstopdf-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[a4paper, 11pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[spanish]</span><span class="nb">{</span>babel<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[t1]</span><span class="nb">{</span>fontenc<span class="nb">}</span>
+<span class="c">% más paquetes, los que necesitemos XD...</span>
+<span class="k">\usepackage</span><span class="nb">{</span>graphicx<span class="nb">}</span>   <span class="c">%% --&gt; nos permite insertar figuras</span>
+<span class="k">\usepackage</span><span class="nb">{</span>epstopdf<span class="nb">}</span>   <span class="c">%% --&gt; nos permite insertar figuras con extensión .eps</span>
+<span class="k">\title</span><span class="nb">{</span>Seminario-Taller: Introducción a la Escritura en <span class="k">\LaTeX</span><span class="nb">{}}</span>
+<span class="k">\author</span><span class="nb">{</span>Ferreira, Juan David<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+    <span class="c">% figura en el documento</span>
+    <span class="k">\includegraphics</span><span class="na">[scale=0.5]</span><span class="nb">{</span>my<span class="nb">_</span>imagen.png<span class="nb">}</span>
+    <span class="c">% figura con extensión .eps en el documento</span>
+    <span class="k">\includegraphics</span><span class="na">[scale=0.5]</span><span class="nb">{</span>other<span class="nb">_</span>imagen.eps<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>Existen casos en los cuales queremos compilar varias figuras colocando una leyenda a cada una de ellas en el mismo entorno. Esto lo podemos hacer usando el paquete <code class="docutils literal notranslate"><span class="pre">subfigure</span></code>. El comando que imdica que una figura está dividida en varias subfiguras es:</p>
+<div class="literal-block-wrapper docutils container" id="subfigure-tex">
+<div class="code-block-caption"><span class="caption-text">subfigure.tex</span><a class="headerlink" href="#subfigure-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[a4paper, 11pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[spanish]</span><span class="nb">{</span>babel<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[t1]</span><span class="nb">{</span>fontenc<span class="nb">}</span>
+<span class="c">% más paquetes, los que necesitemos XD...</span>
+<span class="k">\usepackage</span><span class="nb">{</span>graphicx<span class="nb">}</span>   <span class="c">%% --&gt; nos permite insertar figuras</span>
+<span class="k">\usepackage</span><span class="nb">{</span>epstopdf<span class="nb">}</span>   <span class="c">%% --&gt; nos permite insertar figuras con extensión .eps</span>
+<span class="k">\usepackage</span><span class="nb">{</span>subfigure<span class="nb">}</span>   <span class="c">%% --&gt; nos permite insertar varias figuras con leyendas</span>
+<span class="k">\title</span><span class="nb">{</span>Seminario-Taller: Introducción a la Escritura en <span class="k">\LaTeX</span><span class="nb">{}}</span>
+<span class="k">\author</span><span class="nb">{</span>Ferreira, Juan David<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+    <span class="c">% figura en el documento</span>
+    <span class="k">\includegraphics</span><span class="na">[scale=0.5]</span><span class="nb">{</span>my<span class="nb">_</span>imagen.png<span class="nb">}</span>
+    <span class="c">% figura con extensión .eps en el documento</span>
+    <span class="k">\includegraphics</span><span class="na">[scale=0.5]</span><span class="nb">{</span>other<span class="nb">_</span>imagen.eps<span class="nb">}</span>
+    <span class="c">% subfiguras con diferentes extensiónes</span>
+    <span class="k">\begin</span><span class="nb">{</span>figure<span class="nb">}</span>[h]
+        <span class="k">\subfigure</span><span class="na">[&lt;name_first_image&gt;]</span><span class="nb">{</span><span class="k">\includegraphics</span><span class="na">[options]</span><span class="nb">{</span>first<span class="nb">_</span>imagefile.eps<span class="nb">}}</span>
+        <span class="k">\hfill</span>
+        <span class="k">\subfigure</span><span class="na">[&lt;name_second_image&gt;]</span><span class="nb">{</span><span class="k">\includegraphics</span><span class="na">[options]</span><span class="nb">{</span>second<span class="nb">_</span>imagefile.png<span class="nb">}}</span>
+    <span class="k">\end</span><span class="nb">{</span>figure<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
 </div>
 <div class="section" id="posicionamiento">
 <h2><span class="section-number">3.3. </span>Posicionamiento.<a class="headerlink" href="#posicionamiento" title="Enlazar permanentemente con este título">¶</a></h2>
