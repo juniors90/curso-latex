@@ -1,0 +1,377 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>5. Textos e Hipertextos &mdash; documentación de Curso de LaTeX - 0.0.1</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="6. Modo Matemático" href="modo-matematico.html" />
+    <link rel="prev" title="4. Tablas, Imágenes y Figuras en \(\LaTeX{}\)" href="tablas-imagenes-y-figuras.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Curso de LaTeX
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenidos del Curso:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="acerca-del-curso.html">1. Acerca del Curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">2. Introducción a <span class="math notranslate nohighlight">\(\LaTeX{}\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="formato-de-paginas.ide-textos.html">3. Formatos de página y de textos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tablas-imagenes-y-figuras.html">4. Tablas, Imágenes y Figuras en <span class="math notranslate nohighlight">\(\LaTeX{}\)</span></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Textos e Hipertextos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#etiquetas-y-referencias-cruzadas">5.1. Etiquetas y referencias cruzadas.</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#estructura-basico">5.1.1. Estructura básico</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hiperlinks">5.1.2. Hiperlinks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#macro-hypersetup">5.1.3. Macro <code class="docutils literal notranslate"><span class="pre">hypersetup</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#conflicto-con-section">5.1.4. Conflicto con Section</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#enlaces">5.2. Enlaces.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#notas-al-pie-y-notas-al-margen">5.3. Notas al pie y notas al margen.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modo-matematico.html">6. Modo Matemático</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bibliografias.html">7. Referencias bibliográficas.</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Curso de LaTeX</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">5. </span>Textos e Hipertextos</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Notas/unidad_4.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="textos-e-hipertextos">
+<h1><span class="section-number">5. </span>Textos e Hipertextos<a class="headerlink" href="#textos-e-hipertextos" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="etiquetas-y-referencias-cruzadas">
+<h2><span class="section-number">5.1. </span>Etiquetas y referencias cruzadas.<a class="headerlink" href="#etiquetas-y-referencias-cruzadas" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El paquete se deriva y se basa en el trabajo del proyecto <span class="math notranslate nohighlight">\(Hyper\TeX{}\)</span>, descrito en <a class="reference external" href="http://xxx.lanl.gov/hypertex/1">hypertex</a>. Amplía la funcionalidad de todos los comandos de referencias cruzadas de <span class="math notranslate nohighlight">\(\LaTeX{}\)</span> (incluida la tabla de contenido, bibliografías, etc.) para producir comandos especiales que un controlador puede convertir en enlaces de hipertexto; también proporciona nuevos comandos para permitir al usuario escribir enlaces de hipertexto <em>ad hoc</em>, incluidos aquellos a documentos externos y URLs.</p>
+<div class="section" id="estructura-basico">
+<h3><span class="section-number">5.1.1. </span>Estructura básico<a class="headerlink" href="#estructura-basico" title="Enlazar permanentemente con este título">¶</a></h3>
+<blockquote>
+<div><p>Hay que añadir en el preámbulo:</p>
+</div></blockquote>
+<div class="literal-block-wrapper docutils container" id="hyperref-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 5.1 </span><span class="caption-text">hyperref.tex</span><a class="headerlink" href="#hyperref-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\usepackage</span><span class="nb">{</span>hyperref<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>Asegúrese de que sea el último de sus paquetes cargados, para darle la posibilidad de que no se sobrescriba, ya que su trabajo es redefinir muchos comandos <span class="math notranslate nohighlight">\(\LaTeX{}\)</span>. Con suerte, encontrará que todas las referencias cruzadas funcionan correctamente como hipertexto. Por ejemplo, los comandos <code class="docutils literal notranslate"><span class="pre">\section</span></code> producirán un marcador y un enlace, mientras que los comandos <code class="docutils literal notranslate"><span class="pre">\section*{}</span></code> solo mostrarán enlaces cuando se combinen con un comando <code class="docutils literal notranslate"><span class="pre">\addcontentsline</span></code> correspondiente.</p>
+<p>Otras opciones controlan la apariencia de los enlaces y brindan un control adicional sobre la salida <strong>PDF</strong>. Por ejemplo, <code class="docutils literal notranslate"><span class="pre">colorlinks</span></code>, como bien indica su nombre, colorea los enlaces en lugar de usar recuadros.</p>
+</div>
+<div class="section" id="hiperlinks">
+<h3><span class="section-number">5.1.2. </span>Hiperlinks<a class="headerlink" href="#hiperlinks" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Si necesita hacer referencias a URL o escribir enlaces explícitos, se proporcionan las siguientes macros de usuario de bajo nivel:</p>
+<div class="literal-block-wrapper docutils container" id="hiperlinks-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 5.2 </span><span class="caption-text">hyiperlinks.tex</span><a class="headerlink" href="#hiperlinks-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\url</span><span class="nb">{</span>URL<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>En el caso de agregar texto y se convierta en un hipervínculo a la URL, donde debe ser una URL completa (relativa a la URL base, si está definida) se utiliza el siguiente comando</p>
+<div class="literal-block-wrapper docutils container" id="url-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 5.3 </span><span class="caption-text">URL.tex</span><a class="headerlink" href="#url-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\href</span><span class="nb">{</span>URL<span class="nb">}{</span>texto<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>Los caracteres especiales <code class="docutils literal notranslate"><span class="pre">#</span></code> y <code class="docutils literal notranslate"><span class="pre">~</span></code> no necesitan escaparse de ninguna manera (a menos que el comando se use en el argumento de otro comando).</p>
+<div class="literal-block-wrapper docutils container" id="url-href-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 5.4 </span><span class="caption-text">url_href.tex</span><a class="headerlink" href="#url-href-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[a4paper,12pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[spanish]</span><span class="nb">{</span>babel<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>hyperref<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+El link completo de la documentación del paquete hyperref es <span class="k">\url</span><span class="nb">{</span>https://ctan.dcc.uchile.cl/macros/latex/contrib/hyperref/doc/hyperref-doc.pdf<span class="nb">}</span>
+
+Aunque notemos que el enlace es muy largo, por lo tanto, podemos hipervincular un texto como sigue <span class="k">\href</span><span class="nb">{</span>https://ctan.dcc.uchile.cl/macros/latex/contrib/hyperref/doc/hyperref-doc.pdf<span class="nb">}{</span>link de documentación<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>En general podemos agregar opciones</p>
+<div class="literal-block-wrapper docutils container" id="opciones-url-href-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 5.5 </span><span class="caption-text">opciones_url_href.tex</span><a class="headerlink" href="#opciones-url-href-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\href</span><span class="na">[opciones]</span><span class="nb">{</span>URL<span class="nb">}{</span>texto<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>Las opciones de argumentos opcionales reconocen las opciones de hyperref llamadas <code class="docutils literal notranslate"><span class="pre">pdfremotestartview</span></code>,  <code class="docutils literal notranslate"><span class="pre">pdfnewwindow</span></code> y las siguientes opciones de valor clave:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">page</span></code>: especifica el número de página de inicio de los documentos PDF remotos. La primera página es la 1.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ismap</span></code>: clave booleana, si se establece en verdadero, la URL debe agregar las coordenadas como parámetros de consulta del visor de PDF.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tenextactionraw</span></code>: el valor de los diccionarios clave <code class="docutils literal notranslate"><span class="pre">/Next</span></code> de acciones, consulte la especificación PDF.</p></li>
+</ul>
+</div>
+<div class="section" id="macro-hypersetup">
+<h3><span class="section-number">5.1.3. </span>Macro <code class="docutils literal notranslate"><span class="pre">hypersetup</span></code><a class="headerlink" href="#macro-hypersetup" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La configuración estándar debería estar bien para la mayoría de los usuarios, pero si desea cambiar algo, también es posible. Hay varias variables y dos métodos para pasarlas al paquete. Las opciones se pueden pasar como un argumento del paquete cuando se carga (la forma estándar en que funcionan los paquetes), o el comando <code class="docutils literal notranslate"><span class="pre">\hypersetup</span></code> se puede usar de la siguiente manera.</p>
+<p>Luego de introducir el comando <code class="docutils literal notranslate"><span class="pre">\usepackage{hyperref}</span></code> se introduce</p>
+<div class="literal-block-wrapper docutils container" id="hypersetup-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 5.6 </span><span class="caption-text">hypersetup.tex</span><a class="headerlink" href="#hypersetup-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\hypersetup</span><span class="nb">{</span>opcion = valor<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>Por ejemplo,</p>
+<div class="literal-block-wrapper docutils container" id="ejemplo-hypersetup-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 5.7 </span><span class="caption-text">ejemplo_hypersetup.tex</span><a class="headerlink" href="#ejemplo-hypersetup-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[a4paper,12pt]</span><span class="nb">{</span>book<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[spanish]</span><span class="nb">{</span>babel<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>hyperref<span class="nb">}</span>
+<span class="k">\hypersetup</span><span class="nb">{</span>
+    pdftitle=<span class="nb">{</span>Paquete Hyperref<span class="nb">}</span>,
+    pdfauthor=<span class="nb">{</span>Author<span class="nb">}</span>,
+    pdffitwindow=true,
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="conflicto-con-section">
+<h3><span class="section-number">5.1.4. </span>Conflicto con Section<a class="headerlink" href="#conflicto-con-section" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>El paquete <code class="docutils literal notranslate"><span class="pre">hyperref</span></code> toma el texto de los marcadores a partir de los argumentos de comandos como <code class="docutils literal notranslate"><span class="pre">\section</span></code>, que pueden contener elementos como matemáticas, colores o cambios de fuente, ninguno de los cuales se mostrará en los marcadores tal cual. El comando macro funciona dentro del texto</p>
+<div class="literal-block-wrapper docutils container" id="texorpdfstring-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 5.8 </span><span class="caption-text">texorpdfstring.tex</span><a class="headerlink" href="#texorpdfstring-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\texorpdfstring</span><span class="nb">{</span>TEXstring<span class="nb">}{</span>PDFstring<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>Por ejemplo,</p>
+<div class="literal-block-wrapper docutils container" id="ejemplo-texorpdfstring-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 5.9 </span><span class="caption-text">texorpdfstring.tex</span><a class="headerlink" href="#ejemplo-texorpdfstring-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\section</span><span class="nb">{</span>Pitágoras:
+    <span class="k">\texorpdfstring</span><span class="nb">{</span><span class="s">$</span><span class="nb"> a^</span><span class="m">2</span><span class="nb"> </span><span class="o">+</span><span class="nb"> b^</span><span class="m">2</span><span class="nb"> </span><span class="o">=</span><span class="nb"> c^</span><span class="m">2</span><span class="nb"> </span><span class="s">$</span><span class="nb">}{</span><span class="c">%</span>
+    a<span class="k">\texttwosuperior\ </span>+ b<span class="k">\texttwosuperior\ </span>=
+    c<span class="k">\texttwosuperior</span>
+    <span class="nb">}</span><span class="c">%</span>
+<span class="nb">}</span>
+<span class="k">\section</span><span class="nb">{</span><span class="k">\texorpdfstring</span><span class="nb">{</span><span class="k">\textcolor</span><span class="nb">{</span>red<span class="nb">}}{}{</span>Red<span class="nb">}</span> Mars<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">\pdfstringdef</span></code> ejecuta el gancho antes de expandir la cadena. Por lo tanto, puede utilizar este enlace para realizar tareas adicionales o para deshabilitar comandos adicionales.</p>
+</div>
+</div>
+<div class="section" id="enlaces">
+<h2><span class="section-number">5.2. </span>Enlaces.<a class="headerlink" href="#enlaces" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
+<div class="section" id="notas-al-pie-y-notas-al-margen">
+<h2><span class="section-number">5.3. </span>Notas al pie y notas al margen.<a class="headerlink" href="#notas-al-pie-y-notas-al-margen" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="modo-matematico.html" class="btn btn-neutral float-right" title="6. Modo Matemático" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="tablas-imagenes-y-figuras.html" class="btn btn-neutral float-left" title="4. Tablas, Imágenes y Figuras en \(\LaTeX{}\)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Curso de LaTeX - UNaF - Facultad de Humanidades.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

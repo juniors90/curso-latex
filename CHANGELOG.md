@@ -29,3 +29,16 @@ $ git checkout -b docs-config
 ```
 6. On the GitHub website, go to your repository and create a Pull Request.
 7. Merge the Pull Request to add the ```.nojekyll``` file to the master branch.
+
+## Tips for reStructuredText
+
+The following admonition directives have been implemented:
+   - attention
+   - caution
+   - danger
+   - error
+   - hint
+   - important
+   - note
+   - tip
+   - warning

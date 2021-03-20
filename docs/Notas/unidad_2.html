@@ -1,0 +1,425 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>3. Formatos de página y de textos &mdash; documentación de Curso de LaTeX - 0.0.1</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="4. Tablas, Imágenes y Figuras en \(\LaTeX{}\)" href="unidad_3.html" />
+    <link rel="prev" title="2. Introducción a \(\LaTeX{}\)" href="unidad_1.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Curso de LaTeX
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenidos del Curso:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="acerca-del-curso.html">1. Acerca del Curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unidad_1.html">2. Introducción a <span class="math notranslate nohighlight">\(\LaTeX{}\)</span></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Formatos de página y de textos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduccion-a-la-documentacion-paquete-geometry">3.1. Introducción a la documentación «Paquete <code class="docutils literal notranslate"><span class="pre">geometry</span></code>».</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#formato-de-tamanos-y-fuentes">3.2. Formato de tamaños y fuentes.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#paquete-anysize">3.3. Paquete <code class="docutils literal notranslate"><span class="pre">anysize</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#estructura-basica">3.3.1. Estructura básica</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#formato-de-parrafo">3.4. Formato de párrafo.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#entornos-y-listas">3.5. Entornos y listas.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#encabezados-y-pies-de-pagina">3.6. Encabezados y pies de página.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uso-del-lorem-ipsum">3.7. Uso del Lorem ipsum.</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bien-basico">3.7.1. Bien básico</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="unidad_3.html">4. Tablas, Imágenes y Figuras en <span class="math notranslate nohighlight">\(\LaTeX{}\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="unidad_4.html">5. Textos e Hipertextos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modo-matematico.html">6. Modo Matemático</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bibliografias.html">7. Referencias bibliográficas.</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Curso de LaTeX</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">3. </span>Formatos de página y de textos</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Notas/unidad_2.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="formatos-de-pagina-y-de-textos">
+<h1><span class="section-number">3. </span>Formatos de página y de textos<a class="headerlink" href="#formatos-de-pagina-y-de-textos" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="introduccion-a-la-documentacion-paquete-geometry">
+<h2><span class="section-number">3.1. </span>Introducción a la documentación «Paquete <code class="docutils literal notranslate"><span class="pre">geometry</span></code>».<a class="headerlink" href="#introduccion-a-la-documentacion-paquete-geometry" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Este paquete proporciona una interfaz flexible y sencilla para las dimensiones de la página. Puede cambiar el diseño de la página con parámetros intuitivos.</p>
+<p>La estructura general del código se introduce en el preámbulo</p>
+<div class="literal-block-wrapper docutils container" id="option-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 3.1 </span><span class="caption-text">option.tex</span><a class="headerlink" href="#option-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\usepackage</span>[&lt;option 1&gt;,
+            &lt;option 2&gt;,
+            ...
+            &lt;option n&gt;]<span class="nb">{</span>geometry<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>donde las <code class="docutils literal notranslate"><span class="pre">&lt;option</span> <span class="pre">n&gt;</span></code> son opciones. Las opciones básicas son las que muestran la siguiente figura</p>
+<div class="figure align-center" id="paper-geometry">
+<span id="target-to-image"></span><a class="reference internal image-reference" href="../_images/paper_geometry.jpg"><img alt="../_images/paper_geometry.jpg" src="../_images/paper_geometry.jpg" style="width: 1324.0px; height: 565.5px;" /></a>
+<p class="caption"><span class="caption-number">Figura 3.1 </span><span class="caption-text">dimensiones del diseño</span><a class="headerlink" href="#paper-geometry" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>La <a class="reference internal" href="#target-to-image"><span class="std std-numref">Figura 3.1</span></a> muestra las <a class="reference internal" href="#target-to-image"><span class="std std-ref">dimensiones del diseño</span></a> de página definidas en el paquete <code class="docutils literal notranslate"><span class="pre">geometry</span></code>. El diseño de la página contiene un <code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">body</span></code> (área imprimible) y márgenes. El <code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">body</span></code> consta de un cuerpo (área de texto) con un <code class="docutils literal notranslate"><span class="pre">header</span></code>, <code class="docutils literal notranslate"><span class="pre">footer</span></code> y notas marginales (marginpar) opcionales. Hay cuatro márgenes: <code class="docutils literal notranslate"><span class="pre">left</span></code>, <code class="docutils literal notranslate"><span class="pre">right</span></code>, <code class="docutils literal notranslate"><span class="pre">top</span></code> y <code class="docutils literal notranslate"><span class="pre">bottom</span></code>. Para documentos de dos caras, los márgenes horizontales deben llamarse <code class="docutils literal notranslate"><span class="pre">inner``y</span> <span class="pre">``outer</span></code>.</p>
+<p>Entonces, este paquete permite especificar los 4 márgenes sin necesidad de recordar los comandos de dimensiones de página particulares.</p>
+<p>Como ejemplo, este documento usa los siguiente comandos</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<ul class="simple">
+<li><p>El paquete <code class="docutils literal notranslate"><span class="pre">showframe</span></code> genera los cuadros o cajas del texto, encabezado, nota al margen y al pie de página.</p></li>
+</ul>
+</div>
+<div class="literal-block-wrapper docutils container" id="marginparwidth-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 3.2 </span><span class="caption-text">marginparwidth.tex</span><a class="headerlink" href="#marginparwidth-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\usepackage</span><span class="nb">{</span>showframe<span class="nb">}</span>
+<span class="k">\usepackage</span>[top=2cm,
+            bottom=2cm,
+            left=4cm,
+            right=4cm,
+            marginparwidth=2cm]<span class="nb">{</span>geometry<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>Cada margen se mide desde el borde correspondiente de un papel. Por ejemplo, margen izquierdo (margen interior) significa una distancia horizontal entre el borde izquierdo (interior) del papel y el del cuerpo total. Por lo tanto, los márgenes izquierdo y superior definidos en geometría son diferentes de las dimensiones nativas <code class="docutils literal notranslate"><span class="pre">\leftmargin</span></code> y <code class="docutils literal notranslate"><span class="pre">\topmargin</span></code>.</p>
+<p>El tamaño de un cuerpo (área de texto) se puede modificar mediante <code class="docutils literal notranslate"><span class="pre">\textwidth</span></code> y <code class="docutils literal notranslate"><span class="pre">\textheight</span></code>. Las dimensiones para papel, cuerpo total y márgenes tienen las siguientes relaciones:</p>
+<div class="literal-block-wrapper docutils container" id="paperwidth-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 3.3 </span><span class="caption-text">paperwidth.tex</span><a class="headerlink" href="#paperwidth-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span>paperwidth = left + width + right
+paperheight = top + height + bottom
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>También puede ingresar las medidas en centímetros y pulgadas. Uso <span class="math notranslate nohighlight">\(cm\)</span> para centímetros y <span class="math notranslate nohighlight">\(mm\)</span> para milimetros después de cada valor ( por ejemplo <span class="math notranslate nohighlight">\(254mm\)</span> o <span class="math notranslate nohighlight">\(2,54cm\)</span>).</p>
+<p>Por ejemplo, si desea establecer un margen de <span class="math notranslate nohighlight">\(2cm\)</span> desde cada borde del papel, puede escribir solo</p>
+<div class="literal-block-wrapper docutils container" id="margin-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 3.4 </span><span class="caption-text">margin.tex</span><a class="headerlink" href="#margin-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\usepackage</span><span class="na">[margin=2cm]</span><span class="nb">{</span>geometry<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="formato-de-tamanos-y-fuentes">
+<h2><span class="section-number">3.2. </span>Formato de tamaños y fuentes.<a class="headerlink" href="#formato-de-tamanos-y-fuentes" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
+<div class="section" id="paquete-anysize">
+<h2><span class="section-number">3.3. </span>Paquete <code class="docutils literal notranslate"><span class="pre">anysize</span></code><a class="headerlink" href="#paquete-anysize" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El paquete <code class="docutils literal notranslate"><span class="pre">anysize</span></code> es un paquete <span class="math notranslate nohighlight">\(\LaTeX{}\)</span> que establece el tamaño del papel y los márgenes de un documento. Estos ajustes se realizan con un simple comando.</p>
+<div class="section" id="estructura-basica">
+<h3><span class="section-number">3.3.1. </span>Estructura básica<a class="headerlink" href="#estructura-basica" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Hay que añadir en el preámbulo</p>
+<div class="literal-block-wrapper docutils container" id="anysize-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 3.5 </span><span class="caption-text">anysize.tex</span><a class="headerlink" href="#anysize-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\usepackage</span><span class="nb">{</span>anysize<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>El estilo conoce opciones para definir el tamaño del papel (<code class="docutils literal notranslate"><span class="pre">a4paper</span></code>, <code class="docutils literal notranslate"><span class="pre">a5paper</span></code>, etc.) y una opción adicional <code class="docutils literal notranslate"><span class="pre">germanpar</span></code>, que cambia los márgenes de los párrafos en el documento en particular.</p>
+<p>Después de la inclusión de anysize, hay dos nuevos comandos disponibles para el preámbulo del documento:</p>
+<div class="literal-block-wrapper docutils container" id="papersize-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 3.6 </span><span class="caption-text">papersize.tex</span><a class="headerlink" href="#papersize-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\papersize</span><span class="nb">{</span>width<span class="nb">}{</span>height<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>establece el tamaño del papel. Este comando ya no debe usarse, ya que hay opciones de estilo estandarizadas para que los tamaños de papel estándar se pasen a través del comando <code class="docutils literal notranslate"><span class="pre">\documentclass</span></code>  en el encabezado del documento.</p>
+<p>El más usado es</p>
+<div class="literal-block-wrapper docutils container" id="marginsize-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 3.7 </span><span class="caption-text">marginsize.tex</span><a class="headerlink" href="#marginsize-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\marginsize</span><span class="nb">{</span>left<span class="nb">}{</span>right<span class="nb">}{</span>top<span class="nb">}{</span>bottom<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>establece los tamaños de los márgenes. Esto es lo realmente interesante de todo. En los documentos de dos caras, los márgenes izquierdo y derecho son los de los rectos. Para las espaldas, se intercambian.</p>
+</div>
+</div>
+<div class="section" id="formato-de-parrafo">
+<h2><span class="section-number">3.4. </span>Formato de párrafo.<a class="headerlink" href="#formato-de-parrafo" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
+<div class="section" id="entornos-y-listas">
+<h2><span class="section-number">3.5. </span>Entornos y listas.<a class="headerlink" href="#entornos-y-listas" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
+<div class="section" id="encabezados-y-pies-de-pagina">
+<h2><span class="section-number">3.6. </span>Encabezados y pies de página.<a class="headerlink" href="#encabezados-y-pies-de-pagina" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
+<div class="section" id="uso-del-lorem-ipsum">
+<h2><span class="section-number">3.7. </span>Uso del Lorem ipsum.<a class="headerlink" href="#uso-del-lorem-ipsum" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">lipsum</span></code> es un paquete <span class="math notranslate nohighlight">\(\LaTeX{}\)</span> que produce texto ficticio, de hasta $150$ párrafos y es utilizado en documentos de prueba o ejemplos.</p>
+<p>En la comunidad se lo conoce como <em>Lorem Ipsum</em> y es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas «Letraset», las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de <em>Lorem Ipsum</em>.</p>
+<div class="section" id="bien-basico">
+<h3><span class="section-number">3.7.1. </span>Bien básico<a class="headerlink" href="#bien-basico" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Hay que añadir en el preámbulo:</p>
+<div class="literal-block-wrapper docutils container" id="paquete-lorem-ipsum-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 3.8 </span><span class="caption-text">paquete_lorem_ipsum.tex</span><a class="headerlink" href="#paquete-lorem-ipsum-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\usepackage</span><span class="nb">{</span>lipsum<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>En el cuerpo del documento,</p>
+<div class="literal-block-wrapper docutils container" id="uso-de-lorem-ipsum-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 3.9 </span><span class="caption-text">uso_de_lorem_ipsum.tex</span><a class="headerlink" href="#uso-de-lorem-ipsum-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\lipsum</span><span class="na">[a]</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>donde la letra <code class="docutils literal notranslate"><span class="pre">a</span></code> indica el numero párrafo que se quiere introducir en el texto, pero solo uno de ellos. Por ejemplo,</p>
+<div class="literal-block-wrapper docutils container" id="ejemplo-lorem-ipsum-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 3.10 </span><span class="caption-text">ejemplo_lorem_ipsum.tex</span><a class="headerlink" href="#ejemplo-lorem-ipsum-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[a4paper,12pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[spanish]</span><span class="nb">{</span>babel<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>lipsum<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+<span class="hll">    <span class="k">\lipsum</span><span class="na">[3]</span>
+</span><span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>Si queremos introducir más párrafos podemos usar siguiente comando</p>
+<div class="literal-block-wrapper docutils container" id="parrafos-lorem-ipsum-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 3.11 </span><span class="caption-text">parrafos_lorem_ipsum.tex</span><a class="headerlink" href="#parrafos-lorem-ipsum-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\lipsum</span><span class="na">[a-b]</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>donde <code class="docutils literal notranslate"><span class="pre">a-b</span></code> es un <em>rango</em>, que básicamente, consiste de dos números separados por un guión <code class="docutils literal notranslate"><span class="pre">(-)</span></code>, cuyo valor de <code class="docutils literal notranslate"><span class="pre">a</span></code> es el inicio y <code class="docutils literal notranslate"><span class="pre">b</span></code> es la finalización de párrafos.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Si bien es sintácticamente correcto, <code class="docutils literal notranslate"><span class="pre">lipsum</span></code> (y los comandos relacionados) pueden fallar si <code class="docutils literal notranslate"><span class="pre">b</span></code> es menor que <code class="docutils literal notranslate"><span class="pre">a</span></code>. También falla si no introducimos el valor de <code class="docutils literal notranslate"><span class="pre">a</span></code>.</p>
+</div>
+<p>Existe un comando estandar,  <code class="docutils literal notranslate"><span class="pre">\lipsum,</span></code> donde genera los primeros <span class="math notranslate nohighlight">\(7\)</span> párrafos del texto ficticio, que es equivalente a <code class="docutils literal notranslate"><span class="pre">\lipsum[1-7]</span></code>.</p>
+<p>Termino esta sección, mostrando que también podemos seleccionar oraciones del rango de párrafos sentenciados. El comando es</p>
+<div class="literal-block-wrapper docutils container" id="oraciones-de-parrafos-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 3.12 </span><span class="caption-text">oraciones_de_parrafos.tex</span><a class="headerlink" href="#oraciones-de-parrafos-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\lipsum</span><span class="na">[c-d][a-b]</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>donde, análogo al caso anterior, <code class="docutils literal notranslate"><span class="pre">c-d</span></code> indica el rango de oraciones pero correspondientes al rango de párrafos Por ejemplo,</p>
+<div class="literal-block-wrapper docutils container" id="ejemplo-rango-de-parrafos-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 3.13 </span><span class="caption-text">ejemplo_rango_de_parrafos.tex</span><a class="headerlink" href="#ejemplo-rango-de-parrafos-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[a4paper,12pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[spanish]</span><span class="nb">{</span>babel<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>lipsum<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+<span class="hll">    <span class="k">\lipsum</span><span class="na">[3]</span>
+</span><span class="hll">    <span class="k">\lipsum</span><span class="na">[3-5]</span>
+</span><span class="hll">    <span class="k">\lipsum</span><span class="na">[1-20][3-5]</span>
+</span><span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>Existe un paquete mas general para producir, por ejemplo, listas o ecuaciones ficticias llamada <code class="docutils literal notranslate"><span class="pre">blindtext</span></code>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="unidad_3.html" class="btn btn-neutral float-right" title="4. Tablas, Imágenes y Figuras en \(\LaTeX{}\)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="unidad_1.html" class="btn btn-neutral float-left" title="2. Introducción a \(\LaTeX{}\)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Ferreira, Juan David.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

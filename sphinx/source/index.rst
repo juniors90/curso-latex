@@ -13,14 +13,14 @@ Página en desarrollo
    :caption: Contenidos del Curso:
    :numbered:
    
-   unidad_1
-   unidad_2
-   unidad_3
-   unidad_4
-   unidad_5
-   unidad_6
-   unidad_7
-   unidad_8
+   Notas/acerca-del-curso
+   Notas/introduccion
+   Notas/formato-de-paginas.ide-textos
+   Notas/tablas-imagenes-y-figuras
+   Notas/unidad_4
+   Notas/modo-matematico
+   Notas/bibliografias
+   
 
 Indice
 ======

@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Curso de LaTeX'
-copyright = '2021, Ferreira, Juan David'
+copyright = '2021, Curso de LaTeX - UNaF - Facultad de Humanidades'
 author = 'Ferreira, Juan David'
 
 # The full version, including alpha/beta/rc tags
@@ -62,3 +62,9 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# Enable numref
+numfig = True
+
+# Make sure the target is unique
+autosectionlabel_prefix_document = True

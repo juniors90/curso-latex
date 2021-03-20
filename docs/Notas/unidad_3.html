@@ -1,0 +1,391 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>4. Tablas, Imágenes y Figuras en \(\LaTeX{}\) &mdash; documentación de Curso de LaTeX - 0.0.1</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="5. Textos e Hipertextos" href="unidad_4.html" />
+    <link rel="prev" title="3. Formatos del página y formato de textos" href="unidad_2.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Curso de LaTeX
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenidos del Curso:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="acerca-del-curso.html">1. Acerca del Curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unidad_1.html">2. Introducción a <span class="math notranslate nohighlight">\(\LaTeX{}\)</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="unidad_2.html">3. Formatos del página y formato de textos</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Tablas, Imágenes y Figuras en <span class="math notranslate nohighlight">\(\LaTeX{}\)</span></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#imagenes-y-figuras">4.1. Imágenes y figuras</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduccion-a-los-paquetes-de-imagenes-y-figuras">4.1.1. Introducción a los paquetes de imagenes y figuras.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#insertar-imagenes-y-figuras-en-un-documento">4.1.2. Insertar imágenes y Figuras en un documento.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#posicionamiento">4.1.3. Posicionamiento.</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#introduccion-al-comando-table">4.2. Introducción al comando table.</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tablas-sencillas">4.2.1. Tablas sencillas.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#combinacion-de-celdas">4.2.2. Combinación de celdas.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tablas-avanzadas">4.2.3. Tablas avanzadas</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="unidad_4.html">5. Textos e Hipertextos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modo-matematico.html">6. Modo Matemático</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bibliografias.html">7. Referencias bibliográficas.</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Curso de LaTeX</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">4. </span>Tablas, Imágenes y Figuras en <span class="math notranslate nohighlight">\(\LaTeX{}\)</span></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Notas/unidad_3.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tablas-imagenes-y-figuras-en-latex">
+<h1><span class="section-number">4. </span>Tablas, Imágenes y Figuras en <span class="math notranslate nohighlight">\(\LaTeX{}\)</span><a class="headerlink" href="#tablas-imagenes-y-figuras-en-latex" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="imagenes-y-figuras">
+<h2><span class="section-number">4.1. </span>Imágenes y figuras<a class="headerlink" href="#imagenes-y-figuras" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El objetivo principal de este encuentro es la introducción de <strong>Figuras</strong> y <strong>Tablas</strong> dentro de nuestro documento <span class="math notranslate nohighlight">\(\LaTeX{}\)</span>. El paquete <code class="docutils literal notranslate"><span class="pre">graphicx</span></code>, nos permite compilar figuras en cualquier formato utilizando el comando <code class="docutils literal notranslate"><span class="pre">\includegraphics[options]{my_image}</span></code>. Para el manejo de imágenes como fotografías, capturas de pantallas, etc., podemos usar los formatos <code class="docutils literal notranslate"><span class="pre">.JPG</span></code> y <code class="docutils literal notranslate"><span class="pre">.PNG</span></code>. Uno de los formatos aceptados es el formato con extensión <code class="docutils literal notranslate"><span class="pre">.eps</span></code> (<em>Encapsuled PostScripts</em>).</p>
+<div class="section" id="introduccion-a-los-paquetes-de-imagenes-y-figuras">
+<h3><span class="section-number">4.1.1. </span>Introducción a los paquetes de imagenes y figuras.<a class="headerlink" href="#introduccion-a-los-paquetes-de-imagenes-y-figuras" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>+============+=====================+========================================================+
+| Opciones   | tipo                | Descripción                                            |
++============+=====================+========================================================+
+| scale      | numérico            | Es un factor de escalamiento                           |
++————+———————+——————————————————–+
+| width      | longitud            | Es el ancho al que se debe escalar la figura           |
++————+———————+——————————————————–+
+| height     | longitud            | Es el alto al que se debe escalar la figura .          |
++————+———————+——————————————————–+
+| clip       | true/false          | Excluye todo lo que esté fuera del cuadro delimitador. |
++————+———————+——————————————————–+
+| trim       | dllx dlly durx dury | Reduce el cuadro delimitador en la cantidad            |
+|            |                     | especificada.                                          |
++————+———————+——————————————————–+</p>
+<p>Para utilizar la opción <code class="docutils literal notranslate"><span class="pre">trim</span></code>, debemos asignar cuatro valores separados por espacios <code class="docutils literal notranslate"><span class="pre">trim={&lt;izquierda&gt;</span> <span class="pre">&lt;abajo&gt;</span> <span class="pre">&lt;derecha&gt;</span> <span class="pre">&lt;arriba&gt;}</span></code>. Después de configurar estos valores, debemos activar el recorte con <code class="docutils literal notranslate"><span class="pre">clip=true</span></code> o simplemente <code class="docutils literal notranslate"><span class="pre">clip</span></code>.</p>
+</div>
+<div class="section" id="insertar-imagenes-y-figuras-en-un-documento">
+<h3><span class="section-number">4.1.2. </span>Insertar imágenes y Figuras en un documento.<a class="headerlink" href="#insertar-imagenes-y-figuras-en-un-documento" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>El paquete <code class="docutils literal notranslate"><span class="pre">graphicx</span></code>, nos permite compilar figuras en cualquier formato utilizando el comando <code class="docutils literal notranslate"><span class="pre">\includegraphics[opciones]{imagen}</span></code></p>
+<div class="literal-block-wrapper docutils container" id="graphicx-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 4.1 </span><span class="caption-text">graphicx.tex</span><a class="headerlink" href="#graphicx-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[a4paper, 11pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[spanish]</span><span class="nb">{</span>babel<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[t1]</span><span class="nb">{</span>fontenc<span class="nb">}</span>
+<span class="c">% más paquetes, los que necesitemos XD...</span>
+<span class="k">\usepackage</span><span class="nb">{</span>graphicx<span class="nb">}</span>   <span class="c">%% --&gt; nos permite insertar figuras</span>
+<span class="k">\title</span><span class="nb">{</span>Seminario-Taller: Introducción a la Escritura en <span class="k">\LaTeX</span><span class="nb">{}}</span>
+<span class="k">\author</span><span class="nb">{</span>Ferreira, Juan David<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+    <span class="c">% figura en el documento</span>
+    <span class="k">\includegraphics</span><span class="na">[scale=0.5]</span><span class="nb">{</span>my<span class="nb">_</span>imagen.png<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>Si deseamos compilar una imagen con formato <code class="docutils literal notranslate"><span class="pre">.eps</span></code>, primero declaramos en nuestro preámbulo el paquete <code class="docutils literal notranslate"><span class="pre">epstopdf</span></code>, <code class="docutils literal notranslate"><span class="pre">\includegraphics[opciones]{imagen}</span></code></p>
+<div class="literal-block-wrapper docutils container" id="epstopdf-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 4.2 </span><span class="caption-text">epstopdf.tex</span><a class="headerlink" href="#epstopdf-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[a4paper, 11pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[spanish]</span><span class="nb">{</span>babel<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[t1]</span><span class="nb">{</span>fontenc<span class="nb">}</span>
+<span class="c">% más paquetes, los que necesitemos XD...</span>
+<span class="k">\usepackage</span><span class="nb">{</span>graphicx<span class="nb">}</span>   <span class="c">%% --&gt; nos permite insertar figuras</span>
+<span class="k">\usepackage</span><span class="nb">{</span>epstopdf<span class="nb">}</span>   <span class="c">%% --&gt; nos permite insertar figuras con extensión .eps</span>
+<span class="k">\title</span><span class="nb">{</span>Seminario-Taller: Introducción a la Escritura en <span class="k">\LaTeX</span><span class="nb">{}}</span>
+<span class="k">\author</span><span class="nb">{</span>Ferreira, Juan David<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+    <span class="c">% figura en el documento</span>
+    <span class="k">\includegraphics</span><span class="na">[scale=0.5]</span><span class="nb">{</span>my<span class="nb">_</span>imagen.png<span class="nb">}</span>
+    <span class="c">% figura con extensión .eps en el documento</span>
+    <span class="k">\includegraphics</span><span class="na">[scale=0.5]</span><span class="nb">{</span>other<span class="nb">_</span>imagen.eps<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>Existen casos en los cuales queremos compilar varias figuras colocando una leyenda a cada una de ellas en el mismo entorno. Esto lo podemos hacer usando el paquete <code class="docutils literal notranslate"><span class="pre">subfigure</span></code>. El comando que imdica que una figura está dividida en varias subfiguras es:</p>
+<div class="literal-block-wrapper docutils container" id="subfigure-tex">
+<div class="code-block-caption"><span class="caption-number">Lista 4.3 </span><span class="caption-text">subfigure.tex</span><a class="headerlink" href="#subfigure-tex" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[a4paper, 11pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[spanish]</span><span class="nb">{</span>babel<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[t1]</span><span class="nb">{</span>fontenc<span class="nb">}</span>
+<span class="c">% más paquetes, los que necesitemos XD...</span>
+<span class="k">\usepackage</span><span class="nb">{</span>graphicx<span class="nb">}</span>   <span class="c">%% --&gt; nos permite insertar figuras</span>
+<span class="k">\usepackage</span><span class="nb">{</span>epstopdf<span class="nb">}</span>   <span class="c">%% --&gt; nos permite insertar figuras con extensión .eps</span>
+<span class="k">\usepackage</span><span class="nb">{</span>subfigure<span class="nb">}</span>   <span class="c">%% --&gt; nos permite insertar varias figuras con leyendas</span>
+<span class="k">\title</span><span class="nb">{</span>Seminario-Taller: Introducción a la Escritura en <span class="k">\LaTeX</span><span class="nb">{}}</span>
+<span class="k">\author</span><span class="nb">{</span>Ferreira, Juan David<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+    <span class="c">% figura en el documento</span>
+    <span class="k">\includegraphics</span><span class="na">[scale=0.5]</span><span class="nb">{</span>my<span class="nb">_</span>imagen.png<span class="nb">}</span>
+    <span class="c">% figura con extensión .eps en el documento</span>
+    <span class="k">\includegraphics</span><span class="na">[scale=0.5]</span><span class="nb">{</span>other<span class="nb">_</span>imagen.eps<span class="nb">}</span>
+    <span class="c">% subfiguras con diferentes extensiónes</span>
+    <span class="k">\begin</span><span class="nb">{</span>figure<span class="nb">}</span>[h]
+        <span class="k">\subfigure</span><span class="na">[&lt;name_first_image&gt;]</span><span class="nb">{</span><span class="k">\includegraphics</span><span class="na">[options]</span><span class="nb">{</span>first<span class="nb">_</span>imagefile.eps<span class="nb">}}</span>
+        <span class="k">\hfill</span>
+        <span class="k">\subfigure</span><span class="na">[&lt;name_second_image&gt;]</span><span class="nb">{</span><span class="k">\includegraphics</span><span class="na">[options]</span><span class="nb">{</span>second<span class="nb">_</span>imagefile.png<span class="nb">}}</span>
+    <span class="k">\end</span><span class="nb">{</span>figure<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="posicionamiento">
+<h3><span class="section-number">4.1.3. </span>Posicionamiento.<a class="headerlink" href="#posicionamiento" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>See <a class="reference download internal" download="" href="../_downloads/87ebd6950f08afc64d16d2977577aeb6/ascii.tex"><code class="xref download docutils literal notranslate"><span class="pre">this</span> <span class="pre">example</span> <span class="pre">script</span></code></a>.</p>
+</div>
+</div>
+<div class="section" id="introduccion-al-comando-table">
+<h2><span class="section-number">4.2. </span>Introducción al comando table.<a class="headerlink" href="#introduccion-al-comando-table" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="tablas-sencillas">
+<h3><span class="section-number">4.2.1. </span>Tablas sencillas.<a class="headerlink" href="#tablas-sencillas" title="Enlazar permanentemente con este título">¶</a></h3>
+</div>
+<div class="section" id="combinacion-de-celdas">
+<h3><span class="section-number">4.2.2. </span>Combinación de celdas.<a class="headerlink" href="#combinacion-de-celdas" title="Enlazar permanentemente con este título">¶</a></h3>
+</div>
+<div class="section" id="tablas-avanzadas">
+<h3><span class="section-number">4.2.3. </span>Tablas avanzadas<a class="headerlink" href="#tablas-avanzadas" title="Enlazar permanentemente con este título">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="unidad_4.html" class="btn btn-neutral float-right" title="5. Textos e Hipertextos" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="unidad_2.html" class="btn btn-neutral float-left" title="3. Formatos del página y formato de textos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Ferreira, Juan David.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
