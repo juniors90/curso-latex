@@ -9,7 +9,7 @@ El objetivo principal de este encuentro es la introducción de **Figuras** y **T
 Introducción a los paquetes de imagenes y figuras.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-+============+=====================+========================================================+
++------------+---------------------+--------------------------------------------------------+
 | Opciones   | tipo                | Descripción                                            |
 +============+=====================+========================================================+
 | scale      | numérico            | Es un factor de escalamiento                           |

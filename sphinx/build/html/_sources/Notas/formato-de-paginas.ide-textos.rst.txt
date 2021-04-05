@@ -33,7 +33,7 @@ donde las ``<option n>`` son opciones. Las opciones básicas son las que muestra
 
     dimensiones del diseño
 
-La :ref:`target to image` muestra las :ref:`paper_geometry` de página definidas en el paquete ``geometry``. El diseño de la página contiene un ``total body`` (área imprimible) y \ márgenes. El ``total body`` consta de un cuerpo (área de texto) con un ``header``, ``footer`` y notas marginales (marginpar) opcionales. Hay cuatro márgenes: ``left``, ``right``, ``top`` y ``bottom``. Para documentos de dos caras, los márgenes horizontales deben llamarse ``inner``y ``outer``.
+La :numref:`target to image` muestra las :ref:`paper_geometry` de página definidas en el paquete ``geometry``. El diseño de la página contiene un ``total body`` (área imprimible) y \ márgenes. El ``total body`` consta de un cuerpo (área de texto) con un ``header``, ``footer`` y notas marginales (marginpar) opcionales. Hay cuatro márgenes: ``left``, ``right``, ``top`` y ``bottom``. Para documentos de dos caras, los márgenes horizontales deben llamarse ``inner``y ``outer``.
   
 Entonces, este paquete permite especificar los 4 márgenes sin necesidad de recordar los comandos de dimensiones de página particulares.
   

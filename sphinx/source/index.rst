@@ -15,7 +15,7 @@ Página en desarrollo
    
    Notas/acerca-del-curso
    Notas/introduccion
-   Notas/formato-de-paginas.ide-textos
+   Notas/formato-de-paginas-y-de-textos
    Notas/tablas-imagenes-y-figuras
    Notas/unidad_4
    Notas/modo-matematico

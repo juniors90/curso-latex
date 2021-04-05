@@ -1,10 +1,6 @@
 Formatos de página y de textos
 ========================================
 
-Introducción a la documentación
----------------------------------------------------------
-
-
 Paquete geometry
 ---------------------------------------------------------
 
@@ -79,6 +75,64 @@ Por ejemplo, si desea establecer un margen de :math:`2cm` desde cada borde del p
 
 Formato de tamaños y fuentes.
 ----------------------------------------------------
+
+Por defecto, un documento :math:`\LaTeX{}` tiene definido un tamaño de fuente de ``10pt``. Pero, este tamaño está determinado por lo declarado en las opciones del documento. Por ejemplo,
+
+.. code-block:: latex
+    :caption: tamanio.tex
+    :name: tamanio-tex
+    :linenos:
+
+    \documentclass[12pt]{article}
+
+Los comandos para diferentes tamaños de letras son los siguientes:
+
++-------------------+-----------------------------------------+------------------------------------------------------+
+| Opciones          | Código                                  | Descripción                                          |
++===================+=========================================+======================================================+
+| ``\tiny``         | ``{\tiny Tamaño tiny}``                 | :math:`{\tiny \text{Tamaño tiny}}`                   |
++-------------------+-----------------------------------------+------------------------------------------------------+
+| ``\scriptsize``   | ``{\scriptsize Tamaño scriptsize}``     | :math:`{\scriptsize \text{Tamaño scriptsize}}`       |
++-------------------+-----------------------------------------+------------------------------------------------------+
+| ``\footnotesize`` | ``{\footnotesize Tamaño footnotesize}`` | :math:`{\footnotesize~\text{Tamaño footnotesize}}`   |
++-------------------+-----------------------------------------+------------------------------------------------------+
+| ``\small``        | ``{\small Tamaño small}``               | :math:`{\small \text{Tamaño small}}`                 |
++-------------------+-----------------------------------------+------------------------------------------------------+
+| ``\normalsize``   | ``{\normalsize Tamaño normalsize}``     | :math:`{\normalsize~\text{Tamaño normalsize}}`       |
++-------------------+-----------------------------------------+------------------------------------------------------+
+| ``\large``        | ``{\large Tamaño large}``               | :math:`{\large~\text{Tamaño large}}`                 |
++-------------------+-----------------------------------------+------------------------------------------------------+
+| ``\Large``        | ``{\Large Tamaño Large}``               | :math:`{\Large~\text{Tamaño Large}}`                 |
++-------------------+-----------------------------------------+------------------------------------------------------+
+| ``\LARGE``        | ``{\LARGE Tamaño LARGE}``               | :math:`{\LARGE~\text{Tamaño LARGE}}`                 |
++-------------------+-----------------------------------------+------------------------------------------------------+
+| ``\huge``         | ``{\huge Tamaño huge}``                 | :math:`{\huge~\text{Tamaño huge}}`                   |
++-------------------+-----------------------------------------+------------------------------------------------------+
+| ``\Huge``         | ``{\Huge Tamaño Huge}``                 | :math:`{\Huge~\text{Tamaño Huge}}`                   |
++-------------------+-----------------------------------------+------------------------------------------------------+
+
+La siguiente tabla muestra los cambios en las fuentes dependiendo de la fuente standard seleccionada (article, report, book y letter):
+
+==================  =========  =========  ==========
+standard font size
+----------------------------------------------------
+command	            10pt       11pt       12pt
+==================  =========  =========  ==========
+\tiny	            5pt        6pt         6pt
+\scriptsize         7pt	       8pt         8pt
+\footnotesize       8pt	       9pt        10pt
+\small	            9pt        10pt       11pt
+\normalsize         10p        11pt       12pt
+\large	            12pt       12pt       14pt
+\Large	            14pt       14pt       17pt
+\LARGE	            17pt       17pt       20pt
+\huge	            20pt       20pt       25pt
+\Huge	            25pt       25pt       25pt
+==================  =========  =========  ==========
+
+
+
+
 Paquete ``anysize``
 ----------------------------------------------------
 
